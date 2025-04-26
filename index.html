@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unmukt Chauhan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unmukt Chauhan - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Dark Mode Base */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .about-section {
+            padding: 60px;
+            background-color: #2c2c2c;
+            margin: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+            animation: slideIn 2s ease-out;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #ffa500;
+        }
+        .about-section p {
+            font-size: 1.3rem;
+            color: #bbb;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .button {
+            padding: 12px 24px;
+            background-color: #ffa500;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff8c00;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Unmukt Chauhan</h1>
-    <p>Software Developer | Data Enthusiast | IT Support Specialist</p>
-    <a href="#projects" class="btn">See My Work</a>
-  </section>
+    <header>
+        <h1>Unmukt Chauhan</h1>
+        <p>Security-focused Software Engineer | Data Science Enthusiast</p>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I'm Unmukt, passionate about building solutions in software development, data analysis, and AI. With a Master's in Computer Science and hands-on experience across tech industries, I love creating impact through code and data.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, JavaScript, SQL</li>
-      <li>Machine Learning, Data Analysis</li>
-      <li>Web Development (HTML, CSS, React)</li>
-      <li>Git, Linux, Cloud Basics (AWS)</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Project 1: Sales Data Dashboard</h3>
-        <p>Interactive dashboard analyzing sales KPIs using Python and Power BI.</p>
-      </div>
-      <div class="project">
-        <h3>Project 2: Customer Churn Prediction</h3>
-        <p>Built a machine learning model to predict customer churn with 85% accuracy.</p>
-      </div>
-      <div class="project">
-        <h3>Project 3: Personal Portfolio Website</h3>
-        <p>This very site you're looking at, hosted on GitHub Pages!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section">
-    <h2>Resume</h2>
-    <a href="resume.pdf" class="btn" target="_blank">Download My Resume</a>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: unmukt.chauhan@example.com</p>
-    <p>
-      <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>I'm a Security-focused Software Engineer with a Master's in Computer Science (AI & Data Science specialization). I have strong experience in backend engineering, building automation workflows, and working with distributed cloud-native environments.</p>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/unmukt-chauhan/" class="button" target="_blank">LinkedIn</a>
+            <a href="mailto:unmuktchauhan1@hotmail.com" class="button">Email</a>
+            <a href="#" class="button">Download Resume</a>
+        </div>
+    </section>
 
 </body>
 </html>
